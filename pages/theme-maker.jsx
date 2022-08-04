@@ -4,7 +4,7 @@ import { saveAs } from 'file-saver';
 
 import Toggle from '../components/theme-maker/Toggle';
 import ImageColorInput from '../components/theme-maker/ImageColorInput';
-import ColorInput from '../components/theme-maker/ImageColorInput';
+import ColorInput from '../components/theme-maker/ColorInput';
 import ImageInput from '../components/theme-maker/ImageInput';
 
 export default function ThemeMaker() {
