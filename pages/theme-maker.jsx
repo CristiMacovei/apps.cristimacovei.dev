@@ -124,13 +124,16 @@ export default function ThemeMaker() {
   return (
     <div className='block w-screen h-screen'>
       <form onSubmit={handleSubmit} className='flex flex-col items-center justify-center gap-4 mt-10'>
+        {/* title */}
+        <p className='w-1/3 text-4xl text-center pt-10 pb-12'> Theme Maker </p>
+
         <input className='w-2/3 p-3 bg-gray-200 rounded-md text-md' type="text" name="name" placeholder='Title ( < 45 characters )'/>
 
         <textarea className='w-2/3 p-3 bg-gray-200 rounded-md text-md' name="description" placeholder='Description ( < 128 characters )'></textarea>
 
         {/* images and colors */}
         <div className='w-full'>
-          <Toggle name='image or color' className='w-2/3 p-3 mx-auto'>
+          <Toggle name='Image or Color' className='w-2/3 p-3 mx-auto'>
             <div className='p-6'>
               <ImageColorInput 
                 name='New Tab Background'
@@ -186,7 +189,7 @@ export default function ThemeMaker() {
 
         {/* colors */}
         <div className='w-full'>
-          <Toggle name='colors' className='w-2/3 p-3 mx-auto'>
+          <Toggle name='Colors' className='w-2/3 p-3 mx-auto'>
             <div className='p-6'>
               <ColorInput name='Tab text' colorName='tab_text' />
 
@@ -205,7 +208,7 @@ export default function ThemeMaker() {
 
         {/* images */}
         <div className='w-full'>
-          <Toggle name='images' className='w-2/3 p-3 mx-auto'>
+          <Toggle name='Images' className='w-2/3 p-3 mx-auto'>
             <div className='p-6'>
               <ImageInput name='Tab background v' imageName='theme_tab_background_v' refImage={refImageTabBackgroundV}/>
 
@@ -221,7 +224,7 @@ export default function ThemeMaker() {
         </div>
 
         {/* upload */}
-        <input className='block p-4 text-white bg-blue-500 rounded-md outline-none cursor-pointer'type="submit" value="Pack theme" />
+        <input className='block p-4 text-white bg-blue-500 rounded-md outline-none cursor-pointer'type="submit" value="Pack Theme" />
       </form>
     </div>
   );
